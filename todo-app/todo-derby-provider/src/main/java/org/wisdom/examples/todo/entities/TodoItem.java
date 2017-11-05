@@ -24,15 +24,21 @@ import org.apache.commons.lang3.builder.HashCodeBuilder;
 import org.apache.commons.lang3.builder.ToStringBuilder;
 import org.apache.commons.lang3.builder.ToStringStyle;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
 import javax.xml.bind.annotation.XmlRootElement;
 
 /**
  * Created by subbu on 30/10/17.
  */
 
+@Entity
+@Table (name="todo")
 @XmlRootElement
 public class TodoItem {
 
+    @Id
     private String id;
     private String title;
     private String description;
