@@ -14,6 +14,9 @@
         <wisdom-framework-version>0.10.1-SNAPSHOT</wisdom-framework-version>
         <openjpa.version>2.4.1</openjpa.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <eclipse-persistence-api>2.4.2</eclipse-persistence-api>
+        <eclipse-jpa-persistence>2.0.5</eclipse-jpa-persistence>
+        <eclipse-jpa-osgi>2.3.2</eclipse-jpa-osgi>
     </properties>
 
     <modules>
