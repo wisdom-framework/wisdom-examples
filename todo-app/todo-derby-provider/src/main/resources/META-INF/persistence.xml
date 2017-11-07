@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.0"
+             xmlns="http://java.sun.com/xml/ns/persistence"
+             xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+  <persistence-unit name="todo-pu" transaction-type="RESOURCE_LOCAL">
+    <class>org.wisdom.examples.todo.entities.TodoItem</class>
+    <exclude-unlisted-classes>false</exclude-unlisted-classes>
+    <properties>
+      <property name="javax.persistence.jdbc.driver" value="org.apache.derby.jdbc.EmbeddedDriver"/>
+      <property name="javax.persistence.jdbc.url" value="jdbc:derby:simpleDb;create=true"/>
+      <!--
+        replace the above property with a realistic path to have db persisted across multiple maven build
+        <property name="javax.persistence.jdbc.url" value="jdbc:derby:/Users/johndoe/db/simpleDb;create=true"/>
+      -->
+      <property name="javax.persistence.jdbc.user" value="test"/>
+      <property name="javax.persistence.jdbc.password" value="test"/>
+      <!-- EclipseLink should create the database schema automatically -->
+      <property name="eclipselink.ddl-generation" value="create-tables"/>
+      <property name="eclipselink.ddl-generation.output-mode" value="database"/>
+    </properties>
+  </persistence-unit>
+</persistence>
