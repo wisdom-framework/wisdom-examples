@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <title>User Page</title>
+    <link rel="shortcut icon" href="/assets/images/owl-small.png"/>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <link rel="stylesheet" href="/libs/css/bootstrap.css" media="screen"/>
+    <link rel="stylesheet" href="/assets/css/main.css"/>
+
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <ul class="nav nav-pills pull-right">
+            <li><a href="http://wisdom-framework.org">Wisdom Framework</a></li>
+            <li><a href="/documentation">Documentation</a></li>
+            <li><a href="/monitor">Admin</a></li>
+            <li><a href="http://wisdom-framework.org/documentation/apidocs/0.10.0/index.html">API</a></li>
+        </ul>
+        <h3 class="text-danger">${project.artifactId} - ${project.version}</h3>
+    </div>
+
+    <div id="form">
+        <form action="/user/create" method="POST" id="user-form">
+            <div class="form-group">
+                <label for="firstname">Firstname</label>
+                <input type="text" class="form-control" id="firstname" name="firstname" placeholder="Enter the first name"/>
+            </div>
+            <div class="form-group">
+                <label for="lastname">Lastname</label>
+                <input type="text" class="form-control" id="lastname" name="lastname" placeholder="Enter the last name"/>
+            </div>
+            <div class="form-group">
+                <label for="age">Age</label>
+                <input type="text" class="form-control" id="age" name="age" placeholder="Enter the age"/>
+            </div>
+            <button id="todo-submit" type="submit" class="btn btn-primary">Create User</button>
+        </form>
+    </div>
+
+    <hr/>
+
+    <div class="footer">
+        <p>&copy; Wisdom Framework Project 2017
+            <span class="text-muted pull-right">Wisdom Framework - 0.10.0</span></p>
+    </div>
+
+</div>
+
+<!-- Scripts -->
+<script src="/libs/jquery.min.js"></script>
+<script src="/libs/js/bootstrap.min.js"></script>
+</body>
+</html>
