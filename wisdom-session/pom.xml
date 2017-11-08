@@ -15,7 +15,7 @@
     <packaging>pom</packaging>
 
     <properties>
-        <wisdom-framework-version>0.10.1-SNAPSHOT</wisdom-framework-version>
+        <wisdom-framework-version>0.10.0</wisdom-framework-version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
